@@ -14,10 +14,16 @@
 .reactor-container {
     height: 340px;
     width: 340px;
+    margin: auto;
     border: 1px dashed #888;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    background-color: #384c50;
+    border: 1px solid rgb(18, 20, 20);
+    box-shadow: 0px 0px 32px 8px rgb(18, 20, 20), 0px 0px 4px 1px rgb(18, 20, 20) inset;
 }
 
 .core-inner {
@@ -54,6 +60,7 @@
 .tunnel {
     width: 260px;
     height: 260px;
+    border: 8px solid #222931;
     border-radius: 50%;
     background-color: #fff;
     box-shadow: 0px 0px 5px 1px #52fefe, 0px 0px 5px 4px #52fefe inset;
@@ -157,4 +164,18 @@
     transform-origin: 17px 130px;
     background-color: #073c4b;
     box-shadow: 0px 0px 5px #52fefe inset;
+}
+
+@keyframes reactor-anim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.coil-container {
+    position: fixed;
+    animation: 3s infinite linear reactor-anim;
 }
