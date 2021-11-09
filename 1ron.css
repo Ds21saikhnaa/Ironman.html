@@ -12,3 +12,10 @@
     width: 340px;
     border: 1px dashed #888;
 }
+
+.core-inner {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background-color: #fff;
+}
